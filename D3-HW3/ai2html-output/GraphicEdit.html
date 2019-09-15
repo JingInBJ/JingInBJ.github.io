@@ -1,0 +1,1584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <style>
+        body {
+            margin:auto;
+            padding:50px 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Lora', serif;
+        }
+        .sans-serif {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* choose a light or dark theme to add to the body tag. */
+        .dark-theme {
+            background-color: #151515;
+            color: #fbfbfb;
+        }
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .story-body, .header, .chart-section, .footer {
+            margin:auto;
+            max-width: 700px;
+        }
+
+        .footer {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .chart-section.wide{
+            width:100%;
+            max-width:1200px;
+        }
+
+        .chart-section.wide p.chart-title {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .chart-section.wide p.chart-subhead {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+
+        /* text styles */
+
+        p.kicker {
+            font-size:1rem;
+            text-transform:uppercase;
+        }
+
+        .text-center {
+            text-align:center;
+        }
+
+        h1.headline {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-weight: 800;
+        }
+
+        h2.subhead {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom:0;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        p.body-text {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top:0;
+            margin-bottom:15px;
+        }
+
+        h3.section-head {
+            font-size:2rem;
+            margin:40px 0 10px 0;
+            font-weight:700;
+            line-height:1.3;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            line-height: 0.75;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:0.5px;
+        }
+
+
+        p.note {
+            font-size:0.85rem;
+        }
+
+        /* chart styles */
+
+        .chart-section {
+            width:100%;
+            max-width:1200px;
+            padding:20px 0px;
+        }
+
+        .story-body .chart-section {
+            padding-top:0px;
+        }
+
+
+        .chart-row {
+            display:flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+
+        p.chart-title {
+            font-size:1.3rem;
+            font-weight:700;
+            max-width:700px;
+            margin:0px auto 5px auto;
+        }
+        p.chart-subhead {
+            margin:0 auto;
+            max-width:700px;
+            font-size:1rem;
+            margin-bottom:15px;
+        }
+
+        p.chart-label {
+            margin:0 0 5px 0;
+            font-size:0.85rem;
+            text-transform:uppercase;
+            font-weight:600;
+        }
+
+        .chart-row .chart {
+            width:100%;
+            padding-right:15px;
+            min-width:calc(25% - 15px);
+
+        }
+
+
+
+        p.chart-source {
+            font-size:0.85rem;
+            margin:0;
+        }
+
+
+
+
+
+        /* photos */
+
+        .photo-section {
+            padding:30px 0px;
+            width:100%;
+            margin:auto;
+            display:flex;
+            max-width:1200px;
+        }
+
+        .photo {
+            width:100%;
+            padding-right:15px;
+        }
+        .photo img {
+            width:100%;	
+        }
+
+        p.caption {
+            font-size:0.9rem;
+            margin:0;
+        }
+
+
+
+        /* mobile */
+
+        @media (max-width:700px) {
+
+            .chart-row {
+                display:block;
+            }
+
+            .chart-row .chart {
+                padding:0;
+            }
+
+            .photo-section {
+                display:block;
+            }
+            .photo {
+                padding:0;
+            }
+
+        }
+
+        #g-templates-laptop, #g-templates-medium, #g-templates-mobile {
+            display: none;
+        }
+
+        @media (max-width: 490px) {
+            #g-templates-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 490px) and (max-width: 620px) {
+            #g-templates-laptop {
+                display: block;
+            }
+        }
+
+        @media (min-width: 620px)  {
+            #g-templates-medium {
+                display: block;
+            }
+        }
+
+    </style>
+   <!-- Generated by ai2html v0.94.0 - 2019-09-08 17:50 -->
+<!-- ai file: HW1.ai -->
+	<style media="screen,print">
+		#g-HW1-box ,
+		#g-HW1-box .g-artboard {
+			margin:0 auto;
+		}
+		#g-HW1-box p {
+			margin:0;
+		}
+		#g-HW1-box .g-aiAbs {
+			position:absolute;
+		}
+		#g-HW1-box .g-aiImg {
+			position:absolute;
+			top:0;
+			display:block;
+			width:100% !important;
+		}
+		#g-HW1-box .g-aiSymbol {
+			position: absolute;
+			box-sizing: border-box;
+		}
+		#g-HW1-box .g-aiPointText p { white-space: nowrap; }
+		#g-HW1-Artboard_1 {
+			position:relative;
+			overflow:hidden;
+		}
+		#g-HW1-Artboard_1 p {
+			font-family:arial,helvetica,sans-serif;
+			font-size:12px;
+			line-height:14px;
+			height:auto;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			letter-spacing:0em;
+			text-align:left;
+			color:rgb(0,0,0);
+			text-transform:none;
+			padding-bottom:0;
+			padding-top:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			position:static;
+		}
+		#g-HW1-Artboard_1 .g-pstyle0 {
+			font-size:14px;
+			line-height:17px;
+			height:17px;
+		}
+		#g-HW1-Artboard_1 .g-pstyle1 {
+			height:14px;
+		}
+		#g-HW1-Artboard_1 .g-pstyle2 {
+			font-size:11px;
+			line-height:13px;
+			height:13px;
+		}
+		#g-HW1-Artboard_1 .g-pstyle3 {
+			font-size:7px;
+			line-height:8px;
+			height:8px;
+		}
+		#g-HW1-Artboard_2 {
+			position:relative;
+			overflow:hidden;
+		}
+		#g-HW1-Artboard_2 p {
+			font-family:arial,helvetica,sans-serif;
+			font-size:8px;
+			line-height:10px;
+			height:auto;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			letter-spacing:0em;
+			text-align:left;
+			color:rgb(0,0,0);
+			text-transform:none;
+			padding-bottom:0;
+			padding-top:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			position:static;
+		}
+		#g-HW1-Artboard_2 .g-pstyle0 {
+			font-size:10px;
+			line-height:12px;
+			height:12px;
+		}
+		#g-HW1-Artboard_2 .g-pstyle1 {
+			font-size:7px;
+			line-height:8px;
+			height:8px;
+		}
+		#g-HW1-Artboard_2 .g-pstyle2 {
+			height:10px;
+		}
+		#g-HW1-Artboard_2 .g-pstyle3 {
+			font-size:6px;
+			line-height:7px;
+			height:7px;
+		}
+		#g-HW1-Artboard_2 .g-pstyle4 {
+			font-size:9px;
+			line-height:11px;
+			height:11px;
+		}
+		#g-HW1-Artboard_2 .g-pstyle5 {
+			font-size:6px;
+			line-height:6px;
+			height:6px;
+		}
+		#g-HW1-Artboard_2 .g-cstyle0 {
+			font-size:6px;
+		}
+		#g-HW1-Artboard_4 {
+			position:relative;
+			overflow:hidden;
+		}
+		#g-HW1-Artboard_4 p {
+			font-family:arial,helvetica,sans-serif;
+			font-size:6px;
+			line-height:7px;
+			height:auto;
+			filter:alpha(opacity=100);
+			-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+			opacity:1;
+			letter-spacing:0em;
+			text-align:left;
+			color:rgb(0,0,0);
+			text-transform:none;
+			padding-bottom:0;
+			padding-top:0;
+			mix-blend-mode:normal;
+			font-style:normal;
+			position:static;
+		}
+		#g-HW1-Artboard_4 .g-pstyle0 {
+			font-size:10px;
+			line-height:12px;
+			height:12px;
+		}
+		#g-HW1-Artboard_4 .g-pstyle1 {
+			height:7px;
+		}
+		#g-HW1-Artboard_4 .g-pstyle2 {
+			font-size:8px;
+			line-height:10px;
+			height:10px;
+		}
+		#g-HW1-Artboard_4 .g-pstyle3 {
+			font-size:7px;
+			line-height:8px;
+			height:8px;
+		}
+		#g-HW1-Artboard_4 .g-pstyle4 {
+			font-size:5px;
+			line-height:6px;
+			height:6px;
+		}
+	</style>
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+      
+    <title>U.S. Single Map--gender proportion varies with ages </title>
+  </head>
+
+  <body class="light-theme"> <!-- all of the content on your html page goes inside the body -->
+
+    <div class="header">
+      <p class="kicker">Society</p>
+      <h1 class="headline">U.S. Single Map--gender proportion varies with ages</h1>
+      <h2 class="subhead">Welcome to 2013 Interactive Singles Map</h2>
+      <p class="byline">By Jonathan Soma</p>
+      <p class="date">Published September 15, 2019</p>
+    </div>
+
+    <div class="story-body">
+      <p class="body-text serif">Way back in 2006 a certain pop sociologist published a map of singles across America. Men cursed, women swooned, and each and every unattached member of society packed up for the nearest City of Love. Trouble was, though, the map was a lie.</p>
+      <p class="body-text serif">Well, mostly a lie. But mostly a lie is pretty bad when Life and Love are on the line.</p>
+      <p class="body-text serif">His singles spanned from 20 to 64 years old, a magical world where grandparents have to sneak booze to their 20-year-old partners. A little unrealistic, perhaps? The map also didn't adjust for population - ten thousand extra single women means a lot more in Des Moines than in NYC. </p>
+      <p class="body-text serif">For now, though: welcome to 2013 Interactive Singles Map (albeit with 2012 data),which shows a dramatic change of gender proportion for different ages. </p>
+      <p class="body-text serif"></p>
+      <p class="body-text serif"></p>
+    </div>
+
+    <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+
+
+
+            <!--- PASTE YOUR AI2HTML AFTER THIS LINE -->
+        
+<!-- Generated by ai2html v0.94.0 - 2019-09-15 15:23 -->
+<!-- ai file: 1-SingleMap18-64.ai -->
+<style media="screen,print">
+	#g-1-SingleMap18-64-box ,
+	#g-1-SingleMap18-64-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-1-SingleMap18-64-box p {
+		margin:0;
+	}
+	#g-1-SingleMap18-64-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-1-SingleMap18-64-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-1-SingleMap18-64-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-1-SingleMap18-64-box .g-aiPointText p { white-space: nowrap; }
+	#g-1-SingleMap18-64-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-1-SingleMap18-64-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:12px;
+		line-height:14px;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-1-SingleMap18-64-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		font-size:36px;
+		line-height:43px;
+	}
+	#g-1-SingleMap18-64-Artboard_1 .g-pstyle1 {
+		font-weight:bold;
+		font-size:14px;
+		line-height:17px;
+	}
+	#g-1-SingleMap18-64-Artboard_1 .g-pstyle2 {
+		font-size:14px;
+		line-height:17px;
+	}
+	#g-1-SingleMap18-64-Artboard_1 .g-pstyle3 {
+		height:14px;
+	}
+	#g-1-SingleMap18-64-Artboard_1 .g-pstyle4 {
+		font-weight:bold;
+		height:14px;
+	}
+	#g-1-SingleMap18-64-Artboard_3 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-1-SingleMap18-64-Artboard_3 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:12px;
+		line-height:14px;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-1-SingleMap18-64-Artboard_3 .g-pstyle0 {
+		font-weight:bold;
+		font-size:21px;
+		line-height:25px;
+	}
+	#g-1-SingleMap18-64-Artboard_3 .g-pstyle1 {
+		font-weight:bold;
+	}
+	#g-1-SingleMap18-64-Artboard_3 .g-pstyle2 {
+		font-size:9px;
+		line-height:10px;
+		height:10px;
+	}
+	#g-1-SingleMap18-64-Artboard_3 .g-pstyle3 {
+		font-weight:bold;
+		font-size:9px;
+		line-height:10px;
+		height:10px;
+	}
+	#g-1-SingleMap18-64-Artboard_4 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-1-SingleMap18-64-Artboard_4 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:14px;
+		line-height:17px;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-1-SingleMap18-64-Artboard_4 .g-pstyle0 {
+		font-size:12px;
+		line-height:14px;
+	}
+	#g-1-SingleMap18-64-Artboard_4 .g-pstyle1 {
+		font-weight:bold;
+		font-size:21px;
+		line-height:25px;
+	}
+	#g-1-SingleMap18-64-Artboard_4 .g-pstyle2 {
+		font-weight:bold;
+		font-size:18px;
+		line-height:22px;
+	}
+	#g-1-SingleMap18-64-Artboard_4 .g-pstyle3 {
+		font-weight:bold;
+	}
+	#g-1-SingleMap18-64-Artboard_4 .g-pstyle4 {
+		font-size:11px;
+		line-height:14px;
+		height:14px;
+	}
+	#g-1-SingleMap18-64-Artboard_4 .g-pstyle5 {
+		font-weight:bold;
+		font-size:11px;
+		line-height:14px;
+		height:14px;
+	}
+
+</style>
+
+<div id="g-1-SingleMap18-64-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-1-SingleMap18-64-Artboard_1" class="g-artboard" style="min-width: 850px;" data-aspect-ratio="1.202" data-min-width="850">
+<div style="padding: 0 0 83.1765% 0;"></div>
+		<img id="g-1-SingleMap18-64-Artboard_1-img" class="g-aiImg" alt="" src="1-SingleMap18-64-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs" style="top:6.7893%;left:21.2986%;width:78.9412%;">
+			<p class="g-pstyle0">U.S. Single Map   (Age  18 - 64)</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs" style="top:44.6959%;left:87.2519%;width:12.1176%;">
+			<p class="g-pstyle1">New York, NY</p>
+			<p class="g-pstyle2">24 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs" style="top:64.9222%;left:2.0195%;width:18%;">
+			<p class="g-pstyle1">Los Angeles, CA</p>
+			<p class="g-pstyle2">17 unmatched men per 1000 singles</p>
+			<p>&nbsp;</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.7676%;margin-top:-8.1px;left:4.3133%;width:29px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.7676%;margin-top:-8.1px;left:10.9795%;width:35px;">
+			<p class="g-pstyle3">25</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.7676%;margin-top:-8.1px;left:18.0384%;width:35px;">
+			<p class="g-pstyle3">50</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.7676%;margin-top:-8.1px;left:24.7046%;width:42px;">
+			<p class="g-pstyle3">100</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9231%;margin-top:-8.4px;left:10.9773%;width:115px;">
+			<p class="g-pstyle4">per 1000 singles</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:88.8398%;margin-top:-8.1px;left:7.4107%;width:76px;">
+			<p class="g-pstyle3">more men</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:88.8398%;margin-top:-8.1px;left:18.2731%;width:91px;">
+			<p class="g-pstyle3">more women</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs" style="top:92.9279%;left:4%;width:32.3529%;">
+			<p>Map source: http://jonathansoma.com/singles/</p>
+			<p>Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_3 -->
+	<div id="g-1-SingleMap18-64-Artboard_3" class="g-artboard" style="min-width: 573px;max-width: 849px;max-height: 634px" data-aspect-ratio="1.339" data-min-width="573" data-max-width="849">
+<div style="padding: 0 0 74.6576% 0;"></div>
+		<img id="g-1-SingleMap18-64-Artboard_3-img" class="g-aiImg" alt="" src="1-SingleMap18-64-Artboard_3.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs" style="top:3.7402%;left:25.9811%;width:101.9197%;">
+			<p class="g-pstyle0">U.S. Single Map   (Age  18 - 64)</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs" style="top:41.8431%;left:83.6218%;width:17.9756%;">
+			<p class="g-pstyle1">New York, NY</p>
+			<p>24 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs" style="top:63.3491%;left:0.5241%;width:26.7016%;">
+			<p class="g-pstyle1">Los Angeles, CA</p>
+			<p>17 unmatched men per 1000 singles</p>
+			<p>&nbsp;</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.1156%;margin-top:-5.6px;left:5.6615%;width:26px;">
+			<p class="g-pstyle2">5</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.1156%;margin-top:-5.6px;left:11.8678%;width:30px;">
+			<p class="g-pstyle2">25</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.1156%;margin-top:-5.6px;left:18.4395%;width:30px;">
+			<p class="g-pstyle2">50</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.1156%;margin-top:-5.6px;left:24.6457%;width:35px;">
+			<p class="g-pstyle2">100</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.9072%;margin-top:-5.8px;left:11.8657%;width:81px;">
+			<p class="g-pstyle3">per 1000 singles</p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.531%;margin-top:-5.6px;left:8.5452%;width:56px;">
+			<p class="g-pstyle2">more men</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.531%;margin-top:-5.6px;left:18.658%;width:66px;">
+			<p class="g-pstyle2">more women</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs" style="top:94.9068%;left:5.7998%;width:88.6562%;">
+			<p>Map source: http://jonathansoma.com/singles/  Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_4 -->
+	<div id="g-1-SingleMap18-64-Artboard_4" class="g-artboard" style="max-width: 572px;max-height: 835px" data-aspect-ratio="0.685" data-min-width="0" data-max-width="572">
+<div style="padding: 0 0 146.0158% 0;"></div>
+		<img id="g-1-SingleMap18-64-Artboard_4-img" class="g-aiImg" alt="" src="1-SingleMap18-64-Artboard_4.png"/>
+		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs" style="top:-8.3616%;left:8.7878%;width:147.6744%;">
+			<p class="g-pstyle0">Map source: http://jonathansoma.com/singles/  Data source:  U.S. Census Bureau</p>
+		</div>
+		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs" style="top:1.7918%;left:5.4525%;width:107.8488%;">
+			<p class="g-pstyle1">U.S. Single Map for Major Cities   </p>
+			<p class="g-pstyle1">(Age  18 - 64)</p>
+		</div>
+		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs" style="top:12.5424%;left:6.3752%;width:49.4186%;">
+			<p class="g-pstyle2">East Coast </p>
+		</div>
+		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs" style="top:16.7233%;left:16.6784%;width:80.5233%;">
+			<p class="g-pstyle3">New York, NY</p>
+			<p>24 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs" style="top:25.284%;left:16.6784%;width:80.5233%;">
+			<p class="g-pstyle3">Philadelphia, PA</p>
+			<p>28 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs" style="top:33.8447%;left:16.6784%;width:80.5233%;">
+			<p class="g-pstyle3">Washington, DC</p>
+			<p>30 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs" style="top:42.6045%;left:6.3752%;width:49.4186%;">
+			<p class="g-pstyle2">West Coast </p>
+		</div>
+		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs" style="top:46.5862%;left:17.0087%;width:80.5233%;">
+			<p class="g-pstyle3">Los Angeles, CA</p>
+			<p>17 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs" style="top:55.5451%;left:17.0087%;width:80.5233%;">
+			<p class="g-pstyle3">Seattle, WA</p>
+			<p>40 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs" style="top:64.7031%;left:17.0087%;width:80.5233%;">
+			<p class="g-pstyle3">San Diego, CA</p>
+			<p>62 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.8553%;margin-top:-8.2px;left:7.3707%;width:28px;">
+			<p class="g-pstyle4">5</p>
+		</div>
+		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.8553%;margin-top:-8.2px;left:22.669%;width:34px;">
+			<p class="g-pstyle4">25</p>
+		</div>
+		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.8553%;margin-top:-8.2px;left:38.868%;width:34px;">
+			<p class="g-pstyle4">50</p>
+		</div>
+		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.8553%;margin-top:-8.2px;left:54.1663%;width:41px;">
+			<p class="g-pstyle4">100</p>
+		</div>
+		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.9044%;margin-top:-8.5px;left:22.6636%;width:109px;">
+			<p class="g-pstyle5">per 1000 singles</p>
+		</div>
+		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.8325%;margin-top:-8.2px;left:14.4786%;width:72px;">
+			<p class="g-pstyle4">more men</p>
+		</div>
+		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.8325%;margin-top:-8.2px;left:39.4065%;width:86px;">
+			<p class="g-pstyle4">more women</p>
+		</div>
+		<div id="g-ai2-18" class="g-Layer_1 g-aiAbs" style="top:93.3715%;left:6.9913%;width:73.8372%;">
+			<p class="g-pstyle0">Map source: http://jonathansoma.com/singles/  </p>
+			<p class="g-pstyle0">Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2019-09-15 15:23 -->
+
+<div class="story-body">
+	<p class="body-text serif">Among 20- and 30-somethings, almost every single city in America has more single men than single women. Although no single woman in New York will believe it, I promise it's true.</p>
+	<p class="body-text serif">If you are looking for single women in their twenties, they're hiding out in Durham NC, Savannah GA, or Jackson MS. The North has nothing for you, it's Southern belles or bust.</p>
+</div>
+
+<div class="chart-section">
+	<div class="chart-row">
+	  <div class="chart">
+
+
+
+
+		<!--- PASTE YOUR AI2HTML AFTER THIS LINE -->
+
+<!-- Generated by ai2html v0.94.0 - 2019-09-15 14:13 -->
+<!-- ai file: 2-SingleMap20-39.ai -->
+<style media="screen,print">
+	#g-2-SingleMap20-39-box ,
+	#g-2-SingleMap20-39-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-2-SingleMap20-39-box p {
+		margin:0;
+	}
+	#g-2-SingleMap20-39-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-2-SingleMap20-39-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-2-SingleMap20-39-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-2-SingleMap20-39-box .g-aiPointText p { white-space: nowrap; }
+	#g-2-SingleMap20-39-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-2-SingleMap20-39-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:12px;
+		line-height:14px;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-2-SingleMap20-39-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		font-size:36px;
+		line-height:43px;
+	}
+	#g-2-SingleMap20-39-Artboard_1 .g-pstyle1 {
+		font-weight:bold;
+		font-size:14px;
+		line-height:17px;
+	}
+	#g-2-SingleMap20-39-Artboard_1 .g-pstyle2 {
+		font-size:14px;
+		line-height:17px;
+	}
+	#g-2-SingleMap20-39-Artboard_1 .g-pstyle3 {
+		height:14px;
+	}
+	#g-2-SingleMap20-39-Artboard_1 .g-pstyle4 {
+		font-weight:bold;
+		height:14px;
+	}
+	#g-2-SingleMap20-39-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-2-SingleMap20-39-Artboard_2 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:8px;
+		line-height:10px;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-2-SingleMap20-39-Artboard_2 .g-pstyle0 {
+		font-weight:bold;
+		font-size:25px;
+		line-height:30px;
+	}
+	#g-2-SingleMap20-39-Artboard_2 .g-pstyle1 {
+		font-weight:bold;
+		font-size:10px;
+		line-height:12px;
+	}
+	#g-2-SingleMap20-39-Artboard_2 .g-pstyle2 {
+		font-size:10px;
+		line-height:12px;
+	}
+	#g-2-SingleMap20-39-Artboard_2 .g-pstyle3 {
+		height:10px;
+	}
+	#g-2-SingleMap20-39-Artboard_2 .g-pstyle4 {
+		font-weight:bold;
+		height:10px;
+	}
+	#g-2-SingleMap20-39-Artboard_3 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-2-SingleMap20-39-Artboard_3 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:14px;
+		line-height:17px;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-2-SingleMap20-39-Artboard_3 .g-pstyle0 {
+		font-weight:bold;
+		font-size:21px;
+		line-height:25px;
+	}
+	#g-2-SingleMap20-39-Artboard_3 .g-pstyle1 {
+		font-weight:bold;
+		font-size:18px;
+		line-height:22px;
+	}
+	#g-2-SingleMap20-39-Artboard_3 .g-pstyle2 {
+		font-weight:bold;
+	}
+	#g-2-SingleMap20-39-Artboard_3 .g-pstyle3 {
+		font-size:11px;
+		line-height:14px;
+		height:14px;
+	}
+	#g-2-SingleMap20-39-Artboard_3 .g-pstyle4 {
+		font-weight:bold;
+		font-size:11px;
+		line-height:14px;
+		height:14px;
+	}
+	#g-2-SingleMap20-39-Artboard_3 .g-pstyle5 {
+		font-size:12px;
+		line-height:14px;
+	}
+
+</style>
+
+<div id="g-2-SingleMap20-39-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-2-SingleMap20-39-Artboard_1" class="g-artboard" style="min-width: 850px;" data-aspect-ratio="1.29" data-min-width="850">
+<div style="padding: 0 0 77.5294% 0;"></div>
+		<img id="g-2-SingleMap20-39-Artboard_1-img" class="g-aiImg" alt="" src="2-SingleMap20-39-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs" style="top:3.7936%;left:18.4875%;width:78.9412%;">
+			<p class="g-pstyle0">U.S. Single Map   (Age  20 - 39)</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs" style="top:46.2822%;left:88.0303%;width:12.1176%;">
+			<p class="g-pstyle1">New York, NY</p>
+			<p class="g-pstyle2">35 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs" style="top:67.3748%;left:1.2272%;width:18%;">
+			<p class="g-pstyle1">Los Angeles, CA</p>
+			<p class="g-pstyle2">75 unmatched men per 1000 singles</p>
+			<p>&nbsp;</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.9025%;margin-top:-8.1px;left:4.3133%;width:29px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.9025%;margin-top:-8.1px;left:10.9795%;width:35px;">
+			<p class="g-pstyle3">25</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.9025%;margin-top:-8.1px;left:18.0384%;width:35px;">
+			<p class="g-pstyle3">50</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.9025%;margin-top:-8.1px;left:24.7046%;width:42px;">
+			<p class="g-pstyle3">100</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.2877%;margin-top:-8.4px;left:10.9773%;width:115px;">
+			<p class="g-pstyle4">per 1000 singles</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:93.4897%;margin-top:-8.1px;left:7.4107%;width:76px;">
+			<p class="g-pstyle3">more men</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:93.4897%;margin-top:-8.1px;left:18.2731%;width:91px;">
+			<p class="g-pstyle3">more women</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs" style="top:95.5994%;left:4.1388%;width:32.3529%;">
+			<p>Map source: http://jonathansoma.com/singles/</p>
+			<p>Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-2-SingleMap20-39-Artboard_2" class="g-artboard" style="min-width: 573px;max-width: 849px;max-height: 634px" data-aspect-ratio="1.339" data-min-width="573" data-max-width="849">
+<div style="padding: 0 0 74.6946% 0;"></div>
+		<img id="g-2-SingleMap20-39-Artboard_2-img" class="g-aiImg" alt="" src="2-SingleMap20-39-Artboard_2.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs" style="top:3.7383%;left:20.995%;width:81.5009%;">
+			<p class="g-pstyle0">U.S. Single Map   (Age  20 - 39)</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs" style="top:38.785%;left:90.4683%;width:9.5986%;">
+			<p class="g-pstyle1">New York, NY</p>
+			<p class="g-pstyle2">35 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs" style="top:63.785%;left:1.1381%;width:18.6736%;">
+			<p class="g-pstyle1">Los Angeles, CA</p>
+			<p class="g-pstyle2">75 unmatched men per 1000 singles</p>
+			<p>&nbsp;</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.6273%;margin-top:-5.9px;left:4.322%;width:27px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.6273%;margin-top:-5.9px;left:11.1995%;width:31px;">
+			<p class="g-pstyle3">25</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.6273%;margin-top:-5.9px;left:18.4821%;width:31px;">
+			<p class="g-pstyle3">50</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.6273%;margin-top:-5.9px;left:25.3597%;width:36px;">
+			<p class="g-pstyle3">100</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.182%;margin-top:-6.1px;left:11.1971%;width:87px;">
+			<p class="g-pstyle4">per 1000 singles</p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.5712%;margin-top:-5.9px;left:7.5176%;width:60px;">
+			<p class="g-pstyle3">more men</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.5712%;margin-top:-5.9px;left:18.7242%;width:70px;">
+			<p class="g-pstyle3">more women</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs" style="top:93.9252%;left:4.142%;width:33.3333%;">
+			<p>Map source: http://jonathansoma.com/singles/</p>
+			<p>Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_3 -->
+	<div id="g-2-SingleMap20-39-Artboard_3" class="g-artboard" style="max-width: 572px;max-height: 835px" data-aspect-ratio="0.685" data-min-width="0" data-max-width="572">
+<div style="padding: 0 0 145.9302% 0;"></div>
+		<img id="g-2-SingleMap20-39-Artboard_3-img" class="g-aiImg" alt="" src="2-SingleMap20-39-Artboard_3.png"/>
+		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs" style="top:1.7928%;left:3.3299%;width:107.8488%;">
+			<p class="g-pstyle0">U.S. Single Map for Major Cities   </p>
+			<p class="g-pstyle0">(Age  20 - 39)</p>
+		</div>
+		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs" style="top:12.5498%;left:4.2526%;width:49.4186%;">
+			<p class="g-pstyle1">East Coast </p>
+		</div>
+		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs" style="top:16.7331%;left:14.5557%;width:80.5233%;">
+			<p class="g-pstyle2">New York, NY</p>
+			<p>35 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs" style="top:25.2988%;left:14.5557%;width:80.5233%;">
+			<p class="g-pstyle2">Philadelphia, PA</p>
+			<p>23 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs" style="top:33.8645%;left:14.5557%;width:80.5233%;">
+			<p class="g-pstyle2">Washington, DC</p>
+			<p>24 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs" style="top:42.6295%;left:4.2526%;width:49.4186%;">
+			<p class="g-pstyle1">West Coast </p>
+		</div>
+		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs" style="top:46.6135%;left:14.8861%;width:80.5233%;">
+			<p class="g-pstyle2">Los Angeles, CA</p>
+			<p>75 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs" style="top:55.5777%;left:14.8861%;width:80.5233%;">
+			<p class="g-pstyle2">Seattle, WA</p>
+			<p>87 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs" style="top:64.741%;left:14.8861%;width:80.5233%;">
+			<p class="g-pstyle2">San Diego, CA</p>
+			<p>125 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9051%;margin-top:-8.2px;left:5.2482%;width:28px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9051%;margin-top:-8.2px;left:20.5464%;width:34px;">
+			<p class="g-pstyle3">25</p>
+		</div>
+		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9051%;margin-top:-8.2px;left:36.7454%;width:34px;">
+			<p class="g-pstyle3">50</p>
+		</div>
+		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9051%;margin-top:-8.2px;left:52.0437%;width:41px;">
+			<p class="g-pstyle3">100</p>
+		</div>
+		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.7562%;margin-top:-8.5px;left:20.541%;width:109px;">
+			<p class="g-pstyle4">per 1000 singles</p>
+		</div>
+		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.8852%;margin-top:-8.2px;left:12.3561%;width:72px;">
+			<p class="g-pstyle3">more men</p>
+		</div>
+		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.8852%;margin-top:-8.2px;left:37.284%;width:86px;">
+			<p class="g-pstyle3">more women</p>
+		</div>
+		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs" style="top:93.4263%;left:4.8686%;width:73.8372%;">
+			<p class="g-pstyle5">Map source: http://jonathansoma.com/singles/  </p>
+			<p class="g-pstyle5">Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2019-09-15 14:13 -->
+
+
+
+          </div>
+        </div>
+    </div>
+
+    <div class="story-body">
+		<p class="body-text serif">Once you get up into your 50's, though, the balance shifts to extra single women everywhere.</p>
+		<p class="body-text serif">The changeover from extra men to extra women starts in the late 30's, but doesn't overtake California and the Pacific Northwest until everyone's in their 50's.</p>
+		
+
+    </div>
+
+
+<div class="chart-section">
+	<div class="chart-row">
+		<div class="chart">
+	
+	
+	
+	
+		<!--- PASTE YOUR AI2HTML AFTER THIS LINE -->
+		
+<!-- Generated by ai2html v0.94.0 - 2019-09-15 16:08 -->
+<!-- ai file: 3-SingleMap40-59.ai -->
+<style media="screen,print">
+	#g-3-SingleMap40-59-box ,
+	#g-3-SingleMap40-59-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-3-SingleMap40-59-box p {
+		margin:0;
+	}
+	#g-3-SingleMap40-59-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-3-SingleMap40-59-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-3-SingleMap40-59-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-3-SingleMap40-59-box .g-aiPointText p { white-space: nowrap; }
+	#g-3-SingleMap40-59-Artboard_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-3-SingleMap40-59-Artboard_1 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-3-SingleMap40-59-Artboard_1 .g-pstyle0 {
+		font-weight:bold;
+		font-size:36px;
+		line-height:43px;
+		height:43px;
+	}
+	#g-3-SingleMap40-59-Artboard_1 .g-pstyle1 {
+		font-weight:bold;
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+	}
+	#g-3-SingleMap40-59-Artboard_1 .g-pstyle2 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+	}
+	#g-3-SingleMap40-59-Artboard_1 .g-pstyle3 {
+		height:14px;
+	}
+	#g-3-SingleMap40-59-Artboard_1 .g-pstyle4 {
+		font-weight:bold;
+		height:14px;
+	}
+	#g-3-SingleMap40-59-Artboard_2 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-3-SingleMap40-59-Artboard_2 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:8px;
+		line-height:10px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-3-SingleMap40-59-Artboard_2 .g-pstyle0 {
+		font-weight:bold;
+		font-size:25px;
+		line-height:29px;
+		height:29px;
+	}
+	#g-3-SingleMap40-59-Artboard_2 .g-pstyle1 {
+		font-weight:bold;
+		font-size:10px;
+		line-height:11px;
+		height:11px;
+	}
+	#g-3-SingleMap40-59-Artboard_2 .g-pstyle2 {
+		font-size:10px;
+		line-height:11px;
+		height:11px;
+	}
+	#g-3-SingleMap40-59-Artboard_2 .g-pstyle3 {
+		height:10px;
+	}
+	#g-3-SingleMap40-59-Artboard_2 .g-pstyle4 {
+		font-weight:bold;
+		height:10px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-3-SingleMap40-59-Artboard_3 p {
+		font-family:arial,helvetica,sans-serif;
+		font-size:14px;
+		line-height:17px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle0 {
+		font-weight:bold;
+		font-size:21px;
+		line-height:25px;
+		height:25px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle1 {
+		font-weight:bold;
+		font-size:18px;
+		line-height:22px;
+		height:22px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle2 {
+		font-weight:bold;
+		height:17px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle3 {
+		height:17px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle4 {
+		font-size:11px;
+		line-height:14px;
+		height:14px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle5 {
+		font-weight:bold;
+		font-size:11px;
+		line-height:14px;
+		height:14px;
+	}
+	#g-3-SingleMap40-59-Artboard_3 .g-pstyle6 {
+		font-size:12px;
+		line-height:14px;
+		height:14px;
+	}
+
+</style>
+
+<div id="g-3-SingleMap40-59-box" class="ai2html">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id="g-3-SingleMap40-59-Artboard_1" class="g-artboard" style="min-width: 850px;" data-aspect-ratio="1.202" data-min-width="850">
+<div style="padding: 0 0 83.1765% 0;"></div>
+		<img id="g-3-SingleMap40-59-Artboard_1-img" class="g-aiImg" alt="" src="3-SingleMap40-59-Artboard_1.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:8.3053%;margin-top:-25.7px;left:20.4427%;width:546px;">
+			<p class="g-pstyle0">U.S. Single Map   (Age  40 - 59)</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:40.8968%;margin-top:-10.1px;left:88.6512%;width:112px;">
+			<p class="g-pstyle1">New York, NY</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.2503%;margin-top:-9.8px;left:88.6512%;width:115px;">
+			<p class="g-pstyle2">99 unmatched </p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.6548%;margin-top:-9.8px;left:88.6512%;width:112px;">
+			<p class="g-pstyle2">men per 1000 </p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:47.9179%;margin-top:-9.8px;left:88.6512%;width:66px;">
+			<p class="g-pstyle2">singles</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.6889%;margin-top:-10.1px;left:1.9381%;width:133px;">
+			<p class="g-pstyle1">Los Angeles, CA</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.0424%;margin-top:-9.8px;left:1.9381%;width:164px;">
+			<p class="g-pstyle2">56 unmatched women </p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.4469%;margin-top:-9.8px;left:1.9381%;width:125px;">
+			<p class="g-pstyle2">per 1000 singles</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.1%;margin-top:-8.1px;left:4.3133%;width:29px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.1%;margin-top:-8.1px;left:10.9795%;width:35px;">
+			<p class="g-pstyle3">25</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.1%;margin-top:-8.1px;left:18.0384%;width:35px;">
+			<p class="g-pstyle3">50</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.1%;margin-top:-8.1px;left:24.7046%;width:42px;">
+			<p class="g-pstyle3">100</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.2555%;margin-top:-8.4px;left:10.9773%;width:115px;">
+			<p class="g-pstyle4">per 1000 singles</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.1722%;margin-top:-8.1px;left:7.4107%;width:76px;">
+			<p class="g-pstyle3">more men</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.1722%;margin-top:-8.1px;left:18.2731%;width:91px;">
+			<p class="g-pstyle3">more women</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.2443%;margin-top:-8.1px;left:4.1176%;width:267px;">
+			<p class="g-pstyle3">Map source: http://jonathansoma.com/singles/</p>
+		</div>
+		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:93.3659%;margin-top:-8.1px;left:4.1176%;width:206px;">
+			<p class="g-pstyle3">Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_2 -->
+	<div id="g-3-SingleMap40-59-Artboard_2" class="g-artboard" style="min-width: 573px;max-width: 849px;max-height: 634px" data-aspect-ratio="1.339" data-min-width="573" data-max-width="849">
+<div style="padding: 0 0 74.6946% 0;"></div>
+		<img id="g-3-SingleMap40-59-Artboard_2-img" class="g-aiImg" alt="" src="3-SingleMap40-59-Artboard_2.png"/>
+		<div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:7.2796%;margin-top:-17.2px;left:22.7806%;width:358px;">
+			<p class="g-pstyle0">U.S. Single Map   (Age  40 - 59)</p>
+		</div>
+		<div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:43.7837%;margin-top:-6.4px;left:84.8214%;width:79px;">
+			<p class="g-pstyle1">New York, NY</p>
+		</div>
+		<div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:46.2962%;margin-top:-6.1px;left:84.8214%;width:81px;">
+			<p class="g-pstyle2">99 unmatched </p>
+		</div>
+		<div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:49.1001%;margin-top:-6.1px;left:84.8214%;width:80px;">
+			<p class="g-pstyle2">men per 1000 </p>
+		</div>
+		<div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.6702%;margin-top:-6.1px;left:84.8214%;width:50px;">
+			<p class="g-pstyle2">singles</p>
+		</div>
+		<div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.9799%;margin-top:-6.4px;left:3.3886%;width:93px;">
+			<p class="g-pstyle1">Los Angeles, CA</p>
+		</div>
+		<div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:68.4925%;margin-top:-6.1px;left:3.3886%;width:113px;">
+			<p class="g-pstyle2">56 unmatched women </p>
+		</div>
+		<div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.0627%;margin-top:-6.1px;left:3.3886%;width:88px;">
+			<p class="g-pstyle2">per 1000 singles</p>
+		</div>
+		<div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.8415%;margin-top:-5.8px;left:5.2984%;width:26px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.8415%;margin-top:-5.8px;left:11.6306%;width:31px;">
+			<p class="g-pstyle3">25</p>
+		</div>
+		<div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.8415%;margin-top:-5.8px;left:18.3359%;width:31px;">
+			<p class="g-pstyle3">50</p>
+		</div>
+		<div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.8415%;margin-top:-5.8px;left:24.6681%;width:35px;">
+			<p class="g-pstyle3">100</p>
+		</div>
+		<div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:87.3953%;margin-top:-6.1px;left:11.6285%;width:82px;">
+			<p class="g-pstyle4">per 1000 singles</p>
+		</div>
+		<div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:91.7855%;margin-top:-5.8px;left:8.2406%;width:57px;">
+			<p class="g-pstyle3">more men</p>
+		</div>
+		<div id="g-ai1-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:91.7855%;margin-top:-5.8px;left:18.5589%;width:66px;">
+			<p class="g-pstyle3">more women</p>
+		</div>
+		<div id="g-ai1-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.4584%;margin-top:-5.8px;left:4.901%;width:179px;">
+			<p class="g-pstyle3">Map source: http://jonathansoma.com/singles/</p>
+		</div>
+		<div id="g-ai1-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:98.5612%;margin-top:-5.8px;left:4.901%;width:140px;">
+			<p class="g-pstyle3">Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Artboard_3 -->
+	<div id="g-3-SingleMap40-59-Artboard_3" class="g-artboard" style="max-width: 572px;max-height: 835px" data-aspect-ratio="0.685" data-min-width="0" data-max-width="572">
+<div style="padding: 0 0 145.9302% 0;"></div>
+		<img id="g-3-SingleMap40-59-Artboard_3-img" class="g-aiImg" alt="" src="3-SingleMap40-59-Artboard_3.png"/>
+		<div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:4.5739%;margin-top:-15px;left:2.3074%;width:356px;">
+			<p class="g-pstyle0">U.S. Single Map for Major Cities   </p>
+		</div>
+		<div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:9.554%;margin-top:-15px;left:2.3074%;width:153px;">
+			<p class="g-pstyle0">(Age  40 - 59)</p>
+		</div>
+		<div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:15.1612%;margin-top:-13.1px;left:3.23%;width:120px;">
+			<p class="g-pstyle1">East Coast </p>
+		</div>
+		<div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:18.9523%;margin-top:-10.1px;left:13.5333%;width:112px;">
+			<p class="g-pstyle2">New York, NY</p>
+		</div>
+		<div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:22.0677%;margin-top:-9.8px;left:13.5333%;width:266px;">
+			<p class="g-pstyle3">99 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:27.3188%;margin-top:-10.1px;left:13.5333%;width:131px;">
+			<p class="g-pstyle2">Philadelphia, PA</p>
+		</div>
+		<div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:30.6334%;margin-top:-9.8px;left:13.5333%;width:266px;">
+			<p class="g-pstyle3">90 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.8846%;margin-top:-10.1px;left:13.5333%;width:130px;">
+			<p class="g-pstyle2">Washington, DC</p>
+		</div>
+		<div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:39.1992%;margin-top:-9.8px;left:13.5333%;width:274px;">
+			<p class="g-pstyle3">101 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.0417%;margin-top:-13.1px;left:3.23%;width:125px;">
+			<p class="g-pstyle1">West Coast </p>
+		</div>
+		<div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.6336%;margin-top:-10.1px;left:13.8636%;width:133px;">
+			<p class="g-pstyle2">Los Angeles, CA</p>
+		</div>
+		<div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.9481%;margin-top:-9.8px;left:13.8636%;width:266px;">
+			<p class="g-pstyle3">56 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:57.7969%;margin-top:-10.1px;left:13.8636%;width:98px;">
+			<p class="g-pstyle2">Seattle, WA</p>
+		</div>
+		<div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.1114%;margin-top:-9.8px;left:13.8636%;width:241px;">
+			<p class="g-pstyle3">3 unmatched men per 1000 singles</p>
+		</div>
+		<div id="g-ai2-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.7611%;margin-top:-10.1px;left:13.8636%;width:118px;">
+			<p class="g-pstyle2">San Diego, CA</p>
+		</div>
+		<div id="g-ai2-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:70.0757%;margin-top:-9.8px;left:13.8636%;width:266px;">
+			<p class="g-pstyle3">25 unmatched women per 1000 singles</p>
+		</div>
+		<div id="g-ai2-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.5027%;margin-top:-8.2px;left:4.2256%;width:28px;">
+			<p class="g-pstyle4">5</p>
+		</div>
+		<div id="g-ai2-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.5027%;margin-top:-8.2px;left:19.5239%;width:34px;">
+			<p class="g-pstyle4">25</p>
+		</div>
+		<div id="g-ai2-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.5027%;margin-top:-8.2px;left:35.7229%;width:34px;">
+			<p class="g-pstyle4">50</p>
+		</div>
+		<div id="g-ai2-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:85.5027%;margin-top:-8.2px;left:51.0211%;width:41px;">
+			<p class="g-pstyle4">100</p>
+		</div>
+		<div id="g-ai2-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:87.3538%;margin-top:-8.5px;left:19.5185%;width:109px;">
+			<p class="g-pstyle5">per 1000 singles</p>
+		</div>
+		<div id="g-ai2-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.2836%;margin-top:-8.2px;left:11.3335%;width:72px;">
+			<p class="g-pstyle4">more men</p>
+		</div>
+		<div id="g-ai2-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.2836%;margin-top:-8.2px;left:36.2614%;width:86px;">
+			<p class="g-pstyle4">more women</p>
+		</div>
+		<div id="g-ai2-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:95.2385%;margin-top:-8.1px;left:3.8462%;width:273px;">
+			<p class="g-pstyle6">Map source: http://jonathansoma.com/singles/  </p>
+		</div>
+		<div id="g-ai2-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:98.0273%;margin-top:-8.1px;left:3.8462%;width:206px;">
+			<p class="g-pstyle6">Data source:  U.S. Census Bureau</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2019-09-15 16:08 -->
+
+
+
+
+<script type="text/javascript">
+    (function() {
+        // only want one resizer on the page
+        if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+        document.documentElement.className += " g-resizer-v3-init";
+        // require IE9+
+        if (!("querySelector" in document)) return;
+        function resizer() {
+            var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                widthById = {};
+            elements.forEach(function(el) {
+                var parent = el.parentNode,
+                    width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                    minwidth = el.getAttribute("data-min-width"),
+                    maxwidth = el.getAttribute("data-max-width");
+                widthById[parent.id] = width;
+                if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                    el.style.display = "block";
+                } else {
+                    el.style.display = "none";
+                }
+            });
+            try {
+                if (window.parent && window.parent.$) {
+                    window.parent.$("body").trigger("resizedcontent", [window]);
+                }
+                if (window.require) {
+                    require(['foundation/main'], function() {
+                        require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                            AppCommunicator.triggerResize();
+                        });
+                    });
+                }
+            } catch(e) { console.log(e); }
+        }
+        document.addEventListener('DOMContentLoaded', resizer);
+        // feel free to replace throttle with _.throttle, if available
+        window.addEventListener('resize', throttle(resizer, 200));        
+        function throttle(func, wait) {
+            // from underscore.js
+            var _now = Date.now || function() { return new Date().getTime(); },
+                context, args, result, timeout = null, previous = 0;
+            var later = function() {
+                previous = _now();
+                timeout = null;
+                result = func.apply(context, args);
+                if (!timeout) context = args = null;
+            };
+            return function() {
+                var now = _now(), remaining = wait - (now - previous);
+                context = this;
+                args = arguments;
+                if (remaining <= 0 || remaining > wait) {
+                    if (timeout) {
+                        clearTimeout(timeout);
+                        timeout = null;
+                    }
+                    previous = now;
+                    result = func.apply(context, args);
+                    if (!timeout) context = args = null;
+                } else if (!timeout && options.trailing !== false) {
+                    timeout = setTimeout(later, remaining);
+                }
+                return result;
+            };
+        }
+       
+    })();
+</script>
+	
+			  </div>
+		</div>
+	</div>
+
+  </body>
+</html>
